@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="dist/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-blue-500 flex items-center justify-between py-4 px-16">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img
+          class="w-192 h-50 mr-2"
+          src="images/LOGO DBPC2023.svg"
+          alt="DBPC2023"
+        />
+      </div>
+      <!-- Menu -->
+      <ul class="flex gap-8 items-center">
+        <li><a href="index.html" class="text-white font-semibold">About</a></li>
+        <li>
+          <a href="index.html" class="text-white font-semibold">Mechanism</a>
+        </li>
+        <li>
+          <a href="index.html" class="text-white font-semibold"
+            >Latest Update</a
+          >
+        </li>
+        <!-- Register Button -->
+        <button class="bg-white text-blue-500 px-8 py-2 rounded-full font-bold">
+          Register
+        </button>
+      </ul>
+    </nav>
+    <section class="hero bg-white bg-cover bg-center w-full h-120 relative">
+      <!-- Background Image -->
+      <img
+        class="w-auto h-auto object-cover"
+        src="images/Background Header Title.png"
+        alt="Hero Background"
+      />
+      <!-- Headline -->
+      <h2
+        class="registrasi-headline absolute top-15 text-center text-white text-4xl font-bold mb-8"
+      >
+        Registrasi
+      </h2>
+      <!-- Forms -->
+      <div
+        class="registrasi-forms absolute top-25 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-lg shadow-lg px-8 py-8"
+      >
+        <!-- Form inputs go here -->
+        <div class="mb-4">
+          <input
+            class="w-full px-3 py-2 border rounded pl-6"
+            type="text"
+            id="companyName"
+            name="companyName"
+            placeholder="Nama Perusahaan"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <input
+            class="w-full px-3 py-2 border rounded pl-6"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <input
+            class="w-full px-3 py-2 border rounded pl-6"
+            type="text"
+            id="noTelp"
+            name="noTelp"
+            placeholder="Nomor Telepon"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <textarea
+            class="w-full border rounded-lg px-4 py-2"
+            maxlength="200"
+            placeholder="Tentang Perusahaan (Max. 200 characters)"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label
+            for="formFile"
+            class="mb-2 inline-block text-neutral-700 dark:text-neutral-200"
+            >Upload File Logo</label
+          >
+          <input
+            class="relative m-0 block w-full min-w-0 flex-auto rounded-lg border bg-clip-padding px-4 py-2 text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary"
+            type="file"
+            id="formFile"
+          />
+        </div>
+        <!-- <div class="flex items-center mb-4">
+          <ol>
+              <li>1. Format file .png, .jpg, .jpeg</li>
+              <li>2. Maksimal ukuran file 200KB</li>
+              <li>3, Hindari penggunaan logo berwarna putih</li>
+              <li>4. Minimal lebar 300px</li>
+          </ol>
+        </div> -->
+        <div class="mb-4">
+          <label
+            for="formFile"
+            class="mb-2 inline-block text-neutral-700 dark:text-neutral-200"
+            >Profil Perusahaan atau Deck (opsional)</label
+          >
+          <input
+            class="relative m-0 block w-full min-w-0 flex-auto rounded-lg border bg-clip-padding px-4 py-2 text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary"
+            type="file"
+            id="formFile"
+          />
+        </div>
+        <div class="mb-4">
+          <input
+            type="text"
+            class="w-full border rounded-lg px-4 py-2"
+            placeholder="Link website"
+          />
+        </div>
+
+        <!-- Checkbox -->
+        <div class="mb-4 flex items-center">
+          <input
+            class="mr-2 leading-tight"
+            type="checkbox"
+            id="termsCheckbox"
+            name="termsCheckbox"
+          />
+          <label class="text-sm" for="termsCheckbox">
+            Dengan menekan tombol 'Register', saya menyetujui syarat & ketentuan
+            yang berlaku
+          </label>
+        </div>
+
+        <!-- Register Button -->
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-16 rounded"
+          href="index.html"
+        >
+          Register
+        </button>
+      </div>
+    </section>
+
+    <footer
+      class="bg-sky-600 py-8 px-12 flex flex-col items-start text-white text-sm font-semibold"
+    >
+      <!-- Logo -->
+      <img class="w-192 h-50 mb-6" src="images/LOGO DBPC2023.svg" alt="Logo" />
+
+      <!-- Social media icons -->
+      <div class="flex gap-4 mb-4">
+        <a
+          href="https://www.facebook.com/detikfinance"
+          class="text-white hover:text-gray-300"
+        >
+          <i class="fab fa-facebook-f text-lg"></i>
+        </a>
+        <a
+          href="https://twitter.com/detikfinance"
+          class="text-white hover:text-gray-300"
+        >
+          <i class="fab fa-twitter text-lg"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/detikfinanceofficial"
+          class="text-white hover:text-gray-300"
+        >
+          <i class="fab fa-instagram text-lg"></i>
+        </a>
+      </div>
+
+      <!-- Main text -->
+      <div class="mb-4">
+        Detikfinance memberikan ruang kepada para startup di Indonesia untuk
+        menunjukkan, serta<br />
+        mempromosikan brand mereka untuk mendapatkan perhatian dari venture
+        capital atau angel investor.
+      </div>
+
+      <!-- Border -->
+      <div class="w-[1250px] h-[0px] border border-white"></div>
+
+      <!-- Copyright text -->
+      <div class="text-white text-[10px] font-normal leading-[14px] mt-4">
+        © 2023 Detikcom. All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>

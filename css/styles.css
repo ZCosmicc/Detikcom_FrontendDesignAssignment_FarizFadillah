@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  /* Your existing styles for the hero section */
+  /* ... */
+  /* Ensure the hero section has relative positioning */
+  position: relative;
+}
+
+.registrasi-headline {
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.registrasi-forms {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Define the animation keyframes */
+@keyframes running-cards {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+/* Apply the animation to the grid container */
+.animate-cards {
+  animation: running-cards 10s linear infinite;
+}
